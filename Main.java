@@ -1,5 +1,3 @@
-package Curs11Proiect1;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -25,16 +23,16 @@ public class Main {
 	}
 
 	private static void addNewGuest(Scanner sc, GuestsList list) { 
-		System.out.println("Introdu numele: "); // nu trebuie adaugat pe devmind
+		System.out.println("Introdu numele: "); 
 		String lastName = sc.nextLine();
 		
-		System.out.println("Introdu prenumele: "); // nu trebuie adaugat pe devmind
+		System.out.println("Introdu prenumele: "); 
 		String firstName = sc.nextLine(); 
 		
-		System.out.println("Introdu emailul: "); // nu trebuie adaugat pe devmind
+		System.out.println("Introdu emailul: "); 
 		String email = sc.nextLine(); 
 		
-		System.out.println("Numarul de telefon: "); // nu trebuie adaugat pe devmind
+		System.out.println("Numarul de telefon: ");
 		String phoneNumber = sc.nextLine();
 		
 		Guest newGuest = new Guest(lastName, firstName, email, phoneNumber);
@@ -49,7 +47,7 @@ public class Main {
 		} else if (addNewGuest == 0) { 
 			System.out.println("[" + lastName + " " + firstName 
 					+ "] Felicitari! Locul tau la eveniment este confirmat. Te asteptam!");
-		} else if (addNewGuest == -1) {  // nu trebuie adaugat pe devmind
+		} else if (addNewGuest == -1) { 
 			System.out.println("Persoana este deja inscrisa la eveniment");
 		} 
 	}
