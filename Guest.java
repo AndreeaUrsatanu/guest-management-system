@@ -1,5 +1,3 @@
-package Curs11Proiect1;
-
 import java.util.Objects;
 
 public class Guest {
